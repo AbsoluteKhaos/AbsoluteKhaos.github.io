@@ -71,10 +71,6 @@ var oneonetunnel = Mario.oneonetunnel = function() {
   });
 
 
-
-
-
-
 /*
 
   level.putRealPipe(13,11,3,"RIGHT", function() {
