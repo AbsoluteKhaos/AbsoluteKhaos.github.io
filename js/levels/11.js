@@ -112,7 +112,7 @@ var oneone = Mario.oneone = function() {
 */
  
  
-  castle = [7]
+  castle = [8]
 
   castle.forEach(function(castle) {
     level.putCastle(castle,7 , "https://www.w3schools.com");
