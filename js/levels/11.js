@@ -112,17 +112,17 @@ var oneone = Mario.oneone = function() {
 */
  
  
-  castle = [8]
-
+  castle = [7]
+  level.putDoor(19,12 , "https://www.w3schools.com");
   castle.forEach(function(castle) {
     level.putCastle(castle,7 , "https://www.w3schools.com");
   });
- /*
+ 
   castledoor = [[9] , [202] , [208] , [214]]
    castledoor.forEach(function( castledoor) {
     level.putDoor( castledoor, 12, "https://www.w3schools.com");
   });
-*/
+/*
 
 
   castle = [200]

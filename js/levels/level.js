@@ -124,12 +124,24 @@
     ));
   };
 
+  Level.prototype.putDoor = function(x, y, site) {
+    var px = x*16, py = y*16;
+    this.scenery[y][x] = new Mario.Prop([px,py], this.castledoor);
+    this.door.push(new Mario.Door({
+      pos: [px, py],
+      length: 1,
+      site: site
+    }));
+  };
+
+//FIX DOOR
   Level.prototype.putCastle = function(x, y, site) {
     this.scenery[y][x] = new Mario.Prop([x*16, y*16], this.castle);
     this.scenery[y][x+2] = new Mario.Prop([16*(x+2),16*y], this.castle1);
     this.scenery[y][x+3] = new Mario.Prop([16*(x+3),16*y], this.castle2);
 
     this.scenery[y+5][x+2] = new Mario.Prop([(x+2)*16,(y+5)*16], this.castledoor);
+    var px = x*16, py = y*16;
     this.door.push(new Mario.Door({
       pos: [px, py],
       length: 1,
